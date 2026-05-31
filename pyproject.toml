@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "protodef"
+version = "0.1.0"
+description = "Tiny JSON .protodef protobuf wire encoder/decoder"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Sigge Arkestål" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/protodef"]
